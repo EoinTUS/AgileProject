@@ -15,9 +15,18 @@ public class CinemaTicketGUI {
             "The Lord of the Rings: The Fellowship of the Ring",
             "The Lord of the Rings: The Two Towers",
             "The Lord of the Rings: The Return of the King"
+			"Star Wars Episode 1 The Phantom Menace"
+			"Star Wars Episode 2 Attack of The Clones"
         };
         JComboBox<String> movieComboBox = new JComboBox<>(movies);
-    	
+		
+		//Locations of cinema's
+    	String[] locations = {
+                "Vue Liffey Valley",
+                "Omniplex Cinema",
+                "IMC Cinema"
+            };
+        JComboBox<String> locationComboBox = new JComboBox<>(locations);
     	
     }
       
