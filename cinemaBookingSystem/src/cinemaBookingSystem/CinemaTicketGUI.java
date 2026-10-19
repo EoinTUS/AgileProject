@@ -63,6 +63,16 @@ public class CinemaTicketGUI {
                 JOptionPane.showMessageDialog(frame, "Enter a number!");
             }
         });
+        
+     // Layout (label left, input right)
+        frame.add(new JLabel("Select Location:")); frame.add(locationComboBox);      
+        frame.add(new JLabel("Select Movie:")); frame.add(movieComboBox);       
+        frame.add(new JLabel("Available Seats:")); frame.add(availableSeatsField);
+        frame.add(new JLabel("Seats to Book:")); frame.add(seatsToBookField);        
+        frame.add(bookButton); frame.add(printButton);
+        frame.add(new JScrollPane(ticketArea));
+        frame.add(new JLabel(""));
+        frame.setVisible(true);
     }
       
 }
