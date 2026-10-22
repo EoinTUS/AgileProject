@@ -64,6 +64,32 @@ public class CinemaTicketGUI {
             }
         });
         
+        //  Print Ticket button
+        printButton.addActionListener(e -> {
+
+            String selectedMovie = (String) movieComboBox.getSelectedItem();
+            String selectedLocation = (String) locationComboBox.getSelectedItem();
+
+            int seatsBooked = 0;
+
+            try {
+                seatsBooked = Integer.parseInt(seatsToBookField.getText());
+            } catch (NumberFormatException ex) {
+                JOptionPane.showMessageDialog(frame, "Enter seats first!");
+                return;
+            }
+
+            Ticket ticket = new Ticket(selectedLocation, selectedMovie, seatsBooked);
+
+            ticketArea.setText(ticket.getTicketDetails());
+
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter("ticket.txt"))) {
+                writer.write(ticket.getTicketDetails());
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        });
+        
      // Layout (label left, input right)
         frame.add(new JLabel("Select Location:")); frame.add(locationComboBox);      
         frame.add(new JLabel("Select Movie:")); frame.add(movieComboBox);       
