@@ -19,7 +19,8 @@ public class CinemaTicketGUI {
             "The Lord of the Rings: The Two Towers",
             "The Lord of the Rings: The Return of the King",
 			"Star Wars Episode 1 The Phantom Menace",
-			"Star Wars Episode 2 Attack of The Clones"
+			"Star Wars Episode 2 Attack of The Clones",
+			"Star Wars Episode 3 Revenge of the Sith"
         };
         JComboBox<String> movieComboBox = new JComboBox<>(movies);
 		
