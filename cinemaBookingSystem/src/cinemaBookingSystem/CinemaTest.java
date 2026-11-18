@@ -24,5 +24,5 @@ public class CinemaTest {
         Cinema cinema = new Cinema("IMC Cinema");
 
         assertEquals("IMC Cinema", cinema.getLocation());
-    }
+    } 
 }
