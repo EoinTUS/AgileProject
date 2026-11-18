@@ -1,0 +1,6 @@
+----- CINEMA TICKET -----
+Location: Vue Liffey Valley
+Movie: The Lord of the Rings: The Fellowship of the Ring
+Seats Booked: 2
+Enjoy your show!
+-------------------------
