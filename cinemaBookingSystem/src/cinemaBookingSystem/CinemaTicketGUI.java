@@ -100,6 +100,7 @@ public class CinemaTicketGUI {
         frame.add(new JScrollPane(ticketArea));
         frame.add(new JLabel(""));
         frame.setVisible(true);
+        
     }
       
 }
