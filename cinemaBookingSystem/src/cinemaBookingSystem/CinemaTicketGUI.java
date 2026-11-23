@@ -125,7 +125,7 @@ public class CinemaTicketGUI {
             Ticket ticket = new Ticket(
                 selectedLocation, selectedMovie, seatsBooked);
 
-            ticketArea.setText(ticket.getTicketDetails());
+            	ticketArea.setText(ticket.getTicketDetails());
 
             // Save Ticket to File
             try (BufferedWriter writer =
@@ -147,25 +147,18 @@ public class CinemaTicketGUI {
         // GUI Layout
         frame.add(new JLabel("Select Location:"));
         frame.add(locationComboBox);
-
         frame.add(new JLabel("Select Movie:"));
         frame.add(movieComboBox);
-
         frame.add(new JLabel("Available Seats:"));
         frame.add(availableSeatsField);
-
         frame.add(new JLabel("Seats to Book:"));
         frame.add(seatsToBookField);
-
         frame.add(new JLabel("Email Address:"));
         frame.add(emailField);
-
         frame.add(bookButton);
         frame.add(printButton);
-
         frame.add(new JScrollPane(ticketArea));
         frame.add(new JLabel(""));
-
         frame.setVisible(true);
     }
 }
